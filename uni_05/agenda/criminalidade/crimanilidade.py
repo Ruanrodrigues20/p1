@@ -15,7 +15,6 @@ def conv_int(nums):
 media_m = float(input())
 
 lista = []
-media = 0
 while True:
     dado = input()
     if dado == 'fim': break
