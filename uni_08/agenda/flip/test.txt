@@ -1,0 +1,6 @@
+from undertst import flip
+
+def test():
+    a = [10, 20, 30, 40, 50, 60]
+    flip(a, 2, 4)
+    assert a == [10, 20, 50, 40, 30, 60]

@@ -1,0 +1,11 @@
+from undertst import organiza_por_ultimo_digito
+
+def test_exemplo_1():
+    contas = [3819, 3318, 2977, 4331, 2282, 1016]
+    organiza_por_ultimo_digito(contas)
+    assert contas == [4331, 2282, 3819, 3318, 2977, 1016]
+
+def test_exemplo_2():
+   contas = [11, 46, 22, 342, 54, 545, 12132, 56, 75]
+   organiza_por_ultimo_digito(contas)
+   assert contas == [11, 22, 342, 54, 545, 12132, 75, 46, 56]

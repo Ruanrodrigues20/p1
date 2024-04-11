@@ -1,0 +1,16 @@
+from undertst import separa_duas_cores
+
+def test_exemplo_1():
+    array = ['a', 'a', 'b', 'a', 'b']
+    separa_duas_cores(array, 'b', 'a')
+    assert array == [ 'b', 'b', 'a', 'a', 'a']
+
+def test_exemplo_2():
+    array = [0, 1, 0]
+    separa_duas_cores(array, 0, 1)
+    assert array == [0, 0, 1]
+
+def test_3():
+    array = [0, 1, 0]
+    separa_duas_cores(array, 1, 0)
+    assert array == [1, 0, 0]
