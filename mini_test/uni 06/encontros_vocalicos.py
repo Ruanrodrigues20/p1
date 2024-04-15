@@ -15,7 +15,7 @@ def encontros_vocalicos(string):
         else:
             if len(s_aux) >= 2:
                 lista.append(s_aux)
-            s_aux= ''
+            s_aux = ''
     if len(s_aux) >= 2:
         lista.append(s_aux)
     return lista
