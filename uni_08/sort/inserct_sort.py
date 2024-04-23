@@ -1,16 +1,16 @@
 def inserct_sort(a):
-    for i in range(len(a) - 1, -1, -1):
-        j = i - 1
-        while a[i] < a[j]:
-            a[i], a[j] = a[j], a[i]
-            j -= 1
-        print(i, j)
-    
-            
+    n = len(a)
+    for i in range(1, n):
+        if a[i] < a[i - 1]:
+            j = i
+            while j > 0:
+                if a[j] < a[j -1]:
+                    a[j], a[j - 1] = a[j - 1], a[j]
+                j -= 1
 
 
 
 
-a = [2, 100, 12, 14, -9, 132, 11, 8, 4, 1]
+a = [2, 100, 12, 14, 0, 132, 11, 8, 4, 1]
 inserct_sort(a)
 print(a)
