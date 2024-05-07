@@ -1,2 +1,2 @@
 print(12)
-print('eu')
+print('euaa')
