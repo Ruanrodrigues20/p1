@@ -52,8 +52,8 @@ voos = {"CPV": ["REC", "SSA"],
            "GRU": ["GIG", "BSB"],
            "GIG": ["GRU", "REC"]}
 
-
 assert eh_roteiro(iata, voos, "Campina Grande/Recife/Rio de Janeiro")
 assert eh_roteiro(iata, voos, "Sao Paulo/Rio de Janeiro/Recife/Brasilia")
 assert not eh_roteiro(iata, voos, "Recife/Rio de Janeiro/Salvador/Recife")
+
 ```
