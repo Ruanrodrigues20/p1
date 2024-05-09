@@ -6,8 +6,3 @@ def scroll(m):
         else:
             nova = len(m[0]) * [0]
         m[i] = nova
-
-
-m = [[1, 1, 1]]
-scroll(m)
-print(m)
