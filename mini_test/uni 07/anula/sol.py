@@ -13,3 +13,4 @@ def anula(lista):
 l = [0, 0]
 anula(l)
 print(l)
+print(l)
