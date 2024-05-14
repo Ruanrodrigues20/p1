@@ -1,18 +1,31 @@
+def inserct_sort(a):
+    n = len(a)
+    for i in range(1, n):
+        if a[i] < a[i - 1]:
+            j = i
+            while j > 0:
+                if a[j] < a[j -1]:
+                    a[j], a[j - 1] = a[j - 1], a[j]
+                j -= 1
+
+
 def anula(lista):
-    for i in range(len(lista) -1 , 0, -2):
-        if lista[i] + lista[i - 1] == 0:
-            lista.pop(i)
-            lista.pop(i - 1)
+    l = []
+    for i in range(len(lista)):
+        for j in range(len(lista)):
+            if lista[i] + lista[j] == 0 and not i in l:
+                l.append(i)
+    inserct_sort(l)
+    for i in range(len(l) -1, -1, -1):
+        j = l[i]
+        lista.pop(j)
+       
 
+                
 
-l = [-1, 1, -1, 1, -1]
+l = [1, -1, 1, -1]
 anula(l)
-assert l == [-1]
+assert l == []
 
-l2 = [0, 0, 0]
-anula(l2)
-assert l2 == [0]
-
-l3 = [0, 0, 0, 0]
-anula(l3)
-assert l3 == []
+l2 = [1, 2, -1, 4, -2]
+assert l2 == [4]
